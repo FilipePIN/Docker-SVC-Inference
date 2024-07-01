@@ -31,4 +31,4 @@ while n<10:
     print(f'true_class = {categories[true_class[0]]}')
 
     response = requests.post(url, json={"image":img_encoded}).json()
-    print(response,'\n')
+    print(f'prediction = {response.pop("prediction")}','\n',response,'\n')

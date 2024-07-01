@@ -4,7 +4,8 @@ import cv2
 import base64
 import numpy as np
 import matplotlib.pyplot as plt
-
+import os
+os.listdir()
 model = joblib.load('svc_classifier.pkl')
 
 app = Flask(__name__)
@@ -39,7 +40,7 @@ def predict():
 
     for ind, val in enumerate(categories): 
         result[val+' prob'] = f'{round(probability[0][ind]*100, 2)}%'
-    result['The prediction is'] = categories[model.predict(img_flat)[0]]
+    result['prediction'] = categories[model.predict(img_flat)[0]]
 
     return jsonify(result)
 
