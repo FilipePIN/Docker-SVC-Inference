@@ -6,7 +6,7 @@ import requests
 import cv2
 import base64
 
-url = 'http://localhost:9000/predict'
+url = 'http://172.17.0.2:5000/predict' # internal URL from the docker container
 categories=['airplane','automobile'] 
 
 def get_img(n):
@@ -23,9 +23,9 @@ def plot_img(img):
     plt.pause(3)
     plt.close()
 
-n = 0
-while n<10:
-    n = int(input('Image number:'))
+while True:
+    n = np.random.randint(0,100)
+    print('Image number:',n)
     img, img_encoded, true_class = get_img(n)
     plot_img(img)
     print(f'true_class = {categories[true_class[0]]}')

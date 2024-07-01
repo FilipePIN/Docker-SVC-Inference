@@ -24,8 +24,7 @@ def plot_img(img):
     plt.close()
 
 while True:
-    n = np.random.randint(0,100)
-    print('Image number:',n)
+    n = int(input('Image number:'))
     img, img_encoded, true_class = get_img(n)
     plot_img(img)
     print(f'true_class = {categories[true_class[0]]}')
