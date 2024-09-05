@@ -10,6 +10,8 @@ For testing, you can run the docker container with the bellow commands and then 
 
 In a real-world iot app, it is desirable to have another docker container that reads images from the hardware and sends to the inference container. This is simulated by the container in call_container_API\mock_image_processing folder. Follow the instructions bellow and then go to the call_container_API\mock_image_processing folder and follow the instructions from the Run.md file using a different terminal window, to run the 2 containers at the same time and have them communicate with each other.
 
+![alt text](architecture/architecture_iot.png)
+
 ### To run the container:
 
 #### Build the image:
