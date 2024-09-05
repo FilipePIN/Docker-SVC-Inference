@@ -1,3 +1,5 @@
+#### Filipe Carvalho Silva, 2024
+
 import joblib
 from flask import Flask, request, jsonify
 import cv2

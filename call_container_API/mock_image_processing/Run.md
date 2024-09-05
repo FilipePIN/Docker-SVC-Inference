@@ -1,4 +1,4 @@
-### Docker Image Processing Mock
+## Docker Image Processing Mock
 
 #### Build the image:
 - docker build -t image-processing:test .

@@ -1,3 +1,8 @@
+#### Filipe Carvalho Silva, 2024
+
+## This code pulls images from cifar10 dataset based on chosen index 
+## and sends to a computer vision model inside a docker container.
+
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
