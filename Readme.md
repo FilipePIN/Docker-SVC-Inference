@@ -22,7 +22,6 @@ In a real-world iot app, it is desirable to have another docker container that r
 
 - docker run -p 9000:5000 svc-inference:test
 <!-- - docker run --platform linux/amd64 -p 9000:8080 svc-inference:test -->
-
 <!-- - curl "http://localhost:9000/test" -d '{"number": "10"}' -->
 <!-- - curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"payload":"hello world!"}' -->
 
