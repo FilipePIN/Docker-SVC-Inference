@@ -16,7 +16,7 @@ In a real-world iot app, it is desirable to have another docker container that r
 
 #### Build the image:
 - docker build -t svc-inference:test .
-- docker images
+<!-- - docker images -->
 
 #### Run image locally:
 
@@ -25,7 +25,7 @@ In a real-world iot app, it is desirable to have another docker container that r
 <!-- - curl "http://localhost:9000/test" -d '{"number": "10"}' -->
 <!-- - curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"payload":"hello world!"}' -->
 
-#### Util commands:
+<!-- #### Util commands:
 
 - docker ps
 - docker kill <container_id>
@@ -37,4 +37,4 @@ In a real-world iot app, it is desirable to have another docker container that r
 #### References:
 - https://docker-curriculum.com/
 - https://github.com/prakhar1989/docker-curriculum/tree/master/flask-app
-- https://dev.to/victor_isaac_king/a-step-by-step-guide-to-deploying-a-machine-learning-model-in-a-docker-container-nkp
+- https://dev.to/victor_isaac_king/a-step-by-step-guide-to-deploying-a-machine-learning-model-in-a-docker-container-nkp -->
